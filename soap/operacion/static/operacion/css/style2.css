@@ -1,0 +1,51 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+header {
+	margin-top:60px; 
+}
+p{
+	color:#DDDDDD;
+	font-family: 'Open Sans', sans-serif;
+}
+h4{
+	color:#373A3C;
+}
+.hero{
+	text-align: center;
+	background-image: url('../img/bg_hero.png');
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 640px;
+}
+
+.fuente2{
+	font-family: 'Baskervville', serif;
+}
+.hero_text{
+	padding-top:450px;
+}
+.alto_logo{
+	height:50px;
+}
+.fondo{
+	background:#660066;
+	font-weight: 800;
+}
+.ancho{
+	width: 80%
+}
+.blanco{
+	color:#ffffff;
+}
+.gris1{
+	color:#0000000D;
+}
+.negro{
+	color:#373A3C;
+}
+a{
+	text-decoration:none;
+	color:white;
+}

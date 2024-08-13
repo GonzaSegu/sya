@@ -1,0 +1,26 @@
+{% extends "operacion/base.html" %}   
+
+{% block contenido %}
+    <div style="height: 150px"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-2"></div>
+            
+            <div class="col-12 col-md-8 card m-0 p-0" style="height: 230px">
+                <div class="card-body m-0 p-0 "></div>
+                    <h2 class="text-center m-0 pt-2">Ingresa tus Credenciales</h2>
+                    <hr>
+                    <form action="" method="POST" class="col-12 col-md-8 text-center align-items-center ">
+
+                        {% csrf_token %}
+                        {{ form }}
+
+                        <input type="submit" value="Ingresar" class="btn btn-success align-items-center" style="height: 40px">
+                    </form>
+                </div>
+            </div>   <!--LOGIN_REDIRECT_URL ='/'  # escribir en settings puando autentiqué, me redirija a la raiz, se hace para el login --> 
+            <!-- LOGOUT_REDIRECT_URL = '/'   # para despues de cerrar sesión -->
+        </div>
+    </div>
+    <div style="height: 230px"></div>
+{% endblock %}

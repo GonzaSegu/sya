@@ -1,0 +1,79 @@
+{% extends "operacion/base.html" %}
+{% load static %}
+
+{% block contenido %}
+<header class="text-center">
+    <br>
+    <h3 class="font-weight-bold px-1">Formulario de Contacto</h3>
+</header>
+<br>
+<section class="mx-5 letra2">
+    <form action="enviar.php" method="post" id="">
+        <section class="container-fluid ">
+            <div class="row pb-md-4">
+                <div class="col-md-3"></div>
+                <label class="col-md-1" for="">Nombres:</label>
+                <input class="col-md-2" type="text" id="nombres" name="nombres" minlength=3 maxlength=50 required>
+                <label class="col-md-1 pt-2" for="">Apellidos:</label>
+                <input class="col-md-2" type="text" id="apellidos" name="apellidos" minlength=3 maxlength=50 required>
+            </div>
+            <div class="row pb-md-4">
+                <div class="col-md-3"></div>
+                <label class="col-md-1 pt-2" for="">Cel: +569</label>
+                <input class="col-md-2" type="tel" id="telefono" onchange=Longitud() name="telefono" required>
+                
+                <label class="col-md-1 pt-2" for="">Previsión:</label>
+                <select class="col-md-2" name="prevision" id="prevision" required>
+                    <option value="">- - - - - - -</option>
+                    <option value="Colmena">Colmena</option>
+                    <option value="Consalud">Consalud</option>
+                    <option value="Nueva masVida">Nueva MasVida</option>
+                    <option value="Isalud">ISalud</option>
+                    <option value="Banmedica">Banmédica</option>
+                    <option value="Cruz Blanca">Cruz Blanca</option>
+                    <option value="Vida Tres">Vida Tres</option>
+                    <option value="Esencial">Esencial</option>
+                    <option value="Fundacion">Fundación</option>
+                    <option value="Cruz del Norte">Cruz del Norte</option>
+                    <option value="Fonasa">Fonasa</option>
+                </select>
+                
+            </div>
+            <div class="row pb-3">
+                <div class="col-md-3"></div>
+                <label class="col-md-1 pt-2" for="">E-mail:</label>
+                <input class="col-md-3" type="email" id="email" name="email" maxlength=50 required>
+                <br>
+            </div>
+            <div class="row pb-3">
+                <div class="col-md-3"></div>
+                <label class="col-md-3" for="">Tipo Solicitud:</label>
+                <select class="col-md-2" name="tipo_solicitud" id="tipo_solicitud">
+                    <option value="">- - - - - - -</option>
+                    <option value="Consulta">Consulta</option>
+                    <option value="Comentario">Comentario</option>
+                    <option value="Solicitud">Información</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <label class="col-md-3 pt-1" for="">Mensaje:</label>
+                <textarea class="col-md-3" name="mensaje" id="mensaje" minlength=20 maxlength=500 required></textarea>
+            </div>
+            <br>
+            <div class="row text-center">
+                <div class="col-md-6 " ></div>
+                <button class="col-md-1 col-sm-1 btn-secondary d-none d-md-block" type="reset">Limpiar</button>
+                <di5 class="col-md-1"></di5>
+                <input class="col-md-2 col-xs-6 btn-primary" type="submit" value="Enviar">
+            </div>
+        </section>
+    </form>
+</section>
+</body>
+<br>
+
+{% endblock %}
+
+
